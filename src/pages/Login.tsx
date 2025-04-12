@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Google, Facebook, Moon, Sun, ArrowLeft } from 'lucide-react';
+import { Mail, Facebook, Moon, Sun, ArrowLeft } from 'lucide-react';
 import { useTheme } from '@/hooks/use-theme';
 import { useToast } from '@/components/ui/use-toast';
 
@@ -115,7 +115,7 @@ const Login = () => {
             <div className="grid gap-4">
               <div className="grid grid-cols-2 gap-4">
                 <Button variant="outline" onClick={handleGoogleLogin} disabled={isLoading}>
-                  <Google className="mr-2 h-4 w-4" />
+                  <Mail className="mr-2 h-4 w-4" />
                   Google
                 </Button>
                 <Button variant="outline" onClick={handleFacebookLogin} disabled={isLoading}>
